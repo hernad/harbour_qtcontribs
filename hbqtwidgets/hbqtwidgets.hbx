@@ -1,0 +1,43 @@
+/* --------------------------------------------------------------------
+ * NOTE: You can add manual override which functions to include or
+ *       exclude from automatically generated EXTERNAL/DYNAMIC list.
+ *          Syntax: // HB_FUNC_INCLUDE <func>
+ *                  // HB_FUNC_EXCLUDE <func>
+ */
+
+/* --------------------------------------------------------------------
+ * WARNING: Automatically generated code below. DO NOT EDIT!
+ *          Regenerate using hbmk2 '-hbx=' option.
+ */
+
+#ifndef __HBEXTERN_CH__HBQTWIDGETS__
+#define __HBEXTERN_CH__HBQTWIDGETS__
+
+#if defined( __HBEXTREQ__ ) .OR. defined( __HBEXTERN__HBQTWIDGETS__ANNOUNCE )
+   ANNOUNCE __HBEXTERN__HBQTWIDGETS__
+#endif
+
+#if defined( __HBEXTREQ__ ) .OR. defined( __HBEXTERN__HBQTWIDGETS__REQUEST )
+   #command DYNAMIC <fncs,...> => EXTERNAL <fncs>
+#endif
+
+DYNAMIC HBQTALERT
+DYNAMIC HBQTBROWSE
+DYNAMIC HBQTBROWSENEW
+DYNAMIC HBQTCLEARGETS
+DYNAMIC HBQTGET
+DYNAMIC HBQTGETLIST
+DYNAMIC HBQTREADGETS
+DYNAMIC HBQTSET
+DYNAMIC HBQT_EVENTMODIFIER
+DYNAMIC HBQT_HBEVENTTOQTEVENT
+DYNAMIC HBQT_QTEVENTTOHBEVENT
+DYNAMIC __HBQTBINDGETLIST
+DYNAMIC __HBQTCSSFROMCOLORSTRING
+DYNAMIC __HBQTRGBSTRINGFROMCOLORSTRING
+
+#if defined( __HBEXTREQ__ ) .OR. defined( __HBEXTERN__HBQTWIDGETS__REQUEST )
+   #uncommand DYNAMIC <fncs,...> => EXTERNAL <fncs>
+#endif
+
+#endif

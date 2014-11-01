@@ -1,0 +1,175 @@
+/*
+ * $Id: QCoreApplication.qth 165 2013-02-06 00:40:23Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2009-2012 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+Inherit     = QObject
+Type        = Core
+New         =
+Constructor = No
+</CLASS>
+
+
+<CODE>
+#include <QtCore/QStringList>
+#include <QtCore/QCoreApplication>
+
+/*
+ * QCoreApplication ( int & argc, char ** argv )
+ * ~QCoreApplication ()
+ */
+HB_FUNC( QT_QCOREAPPLICATION )
+{
+
+}
+</CODE>
+
+<ENUMS>
+enum Encoding { CodecForTr, UnicodeUTF8, DefaultCodec }
+</ENUMS>
+
+<PROTOS>
+// bool filterEvent ( void * message, long * result )
+virtual bool notify ( QObject * receiver, QEvent * event )
+// EventFilter setEventFilter ( EventFilter filter )
+// virtual bool winEventFilter ( MSG * msg, long * result )
+
+void addLibraryPath ( const QString & path )
+QString applicationDirPath ()
+QString applicationFilePath ()
+QString applicationName ()
+qint64 applicationPid ()
+QString applicationVersion ()
+QStringList arguments ()
+bool closingDown ()
+int exec ()
+void exit ( int returnCode = 0 )
+void flush ()
+bool hasPendingEvents ()
+void installTranslator ( QTranslator * translationFile )
+QCoreApplication * instance ()
+QStringList libraryPaths ()
+QString organizationDomain ()
+QString organizationName ()
+void postEvent ( QObject * receiver, QEvent * event )                 [*D=2*]
+void postEvent ( QObject * receiver, QEvent * event, int priority )   [*D=2*]
+void processEvents ( QEventLoop::ProcessEventsFlags flags = QEventLoop::AllEvents )
+void processEvents ( QEventLoop::ProcessEventsFlags flags, int maxtime )
+void removeLibraryPath ( const QString & path )
+void removePostedEvents ( QObject * receiver )
+void removePostedEvents ( QObject * receiver, int eventType )
+void removeTranslator ( QTranslator * translationFile )
+bool sendEvent ( QObject * receiver, QEvent * event )
+void sendPostedEvents ( QObject * receiver, int event_type )
+void sendPostedEvents ()
+void setApplicationName ( const QString & application )
+void setApplicationVersion ( const QString & version )
+void setAttribute ( Qt::ApplicationAttribute attribute, bool on = true )
+void setLibraryPaths ( const QStringList & paths )
+void setOrganizationDomain ( const QString & orgDomain )
+void setOrganizationName ( const QString & orgName )
+bool startingUp ()
+bool testAttribute ( Qt::ApplicationAttribute attribute )
+//QString translate ( const char * context, const char * sourceText, const char * disambiguation, Encoding encoding, int n )
+QString translate ( const char * context, const char * sourceText, const char * disambiguation = 0, Encoding encoding = CodecForTr ){
+#if QT_VERSION <= 0x040900
+   QCoreApplication * p = ( QCoreApplication * ) hbqt_par_ptr( 0 );
+   if( p )
+   {
+      switch( hb_pcount() )
+      {
+         case 5:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) && HB_ISCHAR( 3 ) && HB_ISNUM( 4 ) && HB_ISNUM( 5 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ), ( QCoreApplication::Encoding ) hb_parni( 4 ), hb_parni( 5 ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+         case 4:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) && HB_ISCHAR( 3 ) && HB_ISNUM( 4 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ), ( HB_ISNUM( 4 ) ? ( QCoreApplication::Encoding ) hb_parni( 4 ) : ( QCoreApplication::Encoding ) QCoreApplication::CodecForTr ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+         case 3:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) && HB_ISCHAR( 3 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ), ( HB_ISNUM( 4 ) ? ( QCoreApplication::Encoding ) hb_parni( 4 ) : ( QCoreApplication::Encoding ) QCoreApplication::CodecForTr ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+         case 2:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ), ( HB_ISNUM( 4 ) ? ( QCoreApplication::Encoding ) hb_parni( 4 ) : ( QCoreApplication::Encoding ) QCoreApplication::CodecForTr ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+      }
+      hb_errRT_BASE( EG_ARG, 9999, NULL, HB_ERR_FUNCNAME, HB_ERR_ARGS_BASEPARAMS );
+   }
+#else
+   QCoreApplication * p = ( QCoreApplication * ) hbqt_par_ptr( 0 );
+   if( p )
+   {
+      switch( hb_pcount() )
+      {
+         case 4:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) && HB_ISCHAR( 3 ) && HB_ISNUM( 4 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ), hb_parni( 4 ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+         case 3:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) && HB_ISCHAR( 3 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ), ( const char * ) hb_parc( 3 ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+         case 2:
+         {
+            if( HB_ISCHAR( 1 ) && HB_ISCHAR( 2 ) )
+            {
+               hb_retstr_utf8( p->translate( ( const char * ) hb_parc( 1 ), ( const char * ) hb_parc( 2 ) ).toUtf8().data() );
+               return;
+            }
+            break;
+         }
+      }
+      hb_errRT_BASE( EG_ARG, 9999, NULL, HB_ERR_FUNCNAME, HB_ERR_ARGS_BASEPARAMS );
+   }
+#endif
+}
+</PROTOS>
+
+<SLOTS>
+void quit ()
+</SLOTS>
+
+<SIGNALS>
+void aboutToQuit ()
+</SIGNALS>

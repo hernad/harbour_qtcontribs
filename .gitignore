@@ -1,0 +1,6 @@
+.svn
+*.c
+*.o
+.hbmk
+*class*.txt
+lugin

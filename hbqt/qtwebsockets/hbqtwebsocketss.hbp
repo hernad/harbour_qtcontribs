@@ -1,0 +1,7 @@
+#
+# $Id: hbqtwebsocketss.hbp 287 2014-04-10 19:45:52Z bedipritpal $
+#
+
+../hbqt_commons.hbm
+
+hbqtwebsockets.hbm

@@ -1,0 +1,14 @@
+#
+# $Id: validator.hbp 96 2012-12-17 05:27:51Z bedipritpal $
+#
+
+@hbmk.hbm
+
+-w3
+-es2
+-inc
+
+validator.prg
+
+validatormain.ui
+validatorgets.ui

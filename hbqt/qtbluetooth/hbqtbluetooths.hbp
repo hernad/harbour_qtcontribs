@@ -1,0 +1,7 @@
+#
+# $Id: hbqtbluetooths.hbp 288 2014-04-11 02:00:30Z bedipritpal $
+#
+
+../hbqt_commons.hbm
+
+hbqtbluetooth.hbm

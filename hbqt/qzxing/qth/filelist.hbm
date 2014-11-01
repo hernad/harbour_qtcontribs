@@ -1,0 +1,9 @@
+#
+# $Id: filelist.hbm 316 2014-07-06 09:18:19Z bedipritpal $
+#
+
+-pflag=-qtver=0x050300
+-pflag=-qtmodule=QZXing
+-pflag=-qthdocdir=../doc/
+
+QZXing.qth

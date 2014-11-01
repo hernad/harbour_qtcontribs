@@ -1,0 +1,10 @@
+#
+# $Id: gtqtc.hbc 34 2012-10-13 21:57:41Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=gtqtc/gtqtc.hbc

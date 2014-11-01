@@ -1,0 +1,15 @@
+#
+# $Id: hbqtwebsockets.hbm 287 2014-04-10 19:45:52Z bedipritpal $
+#
+
+-i.
+
+qth/filelist.hbm
+
+hbqtwebsockets.hbx
+
+hbqt_init.cpp
+
+../qtcore/hbqtcore.hbc
+../qtnetwork/hbqtnetwork.hbc
+

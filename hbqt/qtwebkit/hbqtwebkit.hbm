@@ -1,0 +1,19 @@
+#
+# $Id: hbqtwebkit.hbm 250 2013-06-29 00:41:35Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+-i.
+
+qth/filelist.hbm
+
+hbqtwebkit.hbx
+
+hbqt_init.cpp
+
+../qtcore/hbqtcore.hbc
+../qtgui/hbqtgui.hbc

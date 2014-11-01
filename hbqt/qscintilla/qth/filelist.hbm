@@ -1,0 +1,21 @@
+#
+# $Id: filelist.hbm 34 2012-10-13 21:57:41Z bedipritpal $
+#
+
+-pflag=-qtver=0x040500
+-pflag=-qtmodule=qscintilla
+-pflag=-qthdocdir=../doc/
+
+HBQsciScintilla.qth
+
+QsciAbstractAPIs.qth
+QsciAPIs.qth
+QsciCommand.qth
+QsciCommandSet.qth
+QsciDocument.qth
+QsciLexer.qth
+QsciLexerCPP.qth
+QsciLexerFlagship.qth
+QsciScintilla.qth
+QsciStyle.qth
+QsciStyledText.qth

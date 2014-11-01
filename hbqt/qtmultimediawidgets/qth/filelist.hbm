@@ -1,0 +1,13 @@
+#
+# $Id: filelist.hbm 310 2014-06-02 01:38:30Z bedipritpal $
+#
+
+-pflag=-qtver=0x040500
+-pflag=-qtmodule=qtmultimediawidgets
+-pflag=-qthdocdir=../doc/
+
+QCameraViewfinder.qth
+QGraphicsVideoItem.qth
+QVideoWidget.qth
+QVideoWidgetControl.qth
+

@@ -1,0 +1,18 @@
+#
+# $Id: hbqt.hbc 38 2012-10-24 21:56:40Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=hbqtcore.hbc
+# libs=hbqtdesigner.hbc
+libs=hbqtgui.hbc
+libs=hbqtnetwork.hbc
+#  libs=hbqtwebkit.hbc
+# libs=hbqtsql.hbc
+libs=gtqtc.hbc
+
+libpaths=lib/${hb_plat}/${hb_comp}/

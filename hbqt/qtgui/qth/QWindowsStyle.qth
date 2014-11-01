@@ -1,0 +1,46 @@
+/*
+ * $Id: QWindowsStyle.qth 161 2013-02-05 01:03:47Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2009-2012 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+Inherit     = QCommonStyle
+Type        = Core
+New         = 
+VersionUpto = 0x040900
+</CLASS>
+
+<CODE>
+#include <QtGui/QWindowsStyle>
+
+
+/*
+ * QWindowsStyle ()
+ * ~QWindowsStyle ()
+ *
+ */
+HB_FUNC( QT_QWINDOWSSTYLE )
+{
+   __HB_RETPTRGC__( new QWindowsStyle() );
+}
+</CODE>
+
+<ENUMS>
+</ENUMS>
+
+<PROTOS>
+</PROTOS>
+
+<SLOTS>
+</SLOTS>
+
+<SIGNALS>
+</SIGNALS>

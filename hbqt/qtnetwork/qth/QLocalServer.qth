@@ -1,0 +1,106 @@
+/*
+ * $Id: QGraphicsItemGroup.qth 34 2012-10-13 21:57:41Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2013 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+QObject     = yes
+Inherit     =
+Type        =
+New         =
+Version     =
+</CLASS>
+
+<CODE>
+#include <QtNetwork/QLocalServer>
+
+
+/*
+ * QLocalServer(QObject * parent = 0)
+ * ~QLocalServer()
+ */
+HB_FUNC( QT_QLOCALSERVER )
+{
+   if( hb_pcount() == 1 && hbqt_par_isDerivedFrom( 1, "QOBJECT" ) )
+   {
+      __HB_RETPTRGC__( new QLocalServer( hbqt_par_QObject( 1 ) ) );
+   }
+   else
+   {
+      __HB_RETPTRGC__( new QLocalServer() );
+   }
+}
+</CODE>
+
+<ENUMS>
+enum   SocketOption { NoOptions, UserAccessOption, GroupAccessOption, OtherAccessOption, WorldAccessOption }
+flags   SocketOptions
+</ENUMS>
+
+<PROTOS>
+void   close()
+QString   errorString() const
+QString   fullServerName() const
+virtual bool   hasPendingConnections() const
+bool   isListening() const
+
+//bool   listen(qintptr socketDescriptor)                                        [*V=0x050000*]
+bool   listen(const QString & name){
+   QLocalServer * p = ( QLocalServer * ) hbqt_par_ptr( 0 );
+   if( p )
+   {
+      switch( hb_pcount() )
+      {
+         case 1:
+         {
+            if( HB_ISCHAR( 1 ) )
+            {
+               void * pText01 = NULL;
+               hb_retl( p->listen( ( QString ) hb_parstr_utf8( 1, &pText01, NULL ) ) );
+               hb_strfree( pText01 );
+               return;
+            }
+#if QT_VERSION >= 0x050000
+            else if( HB_ISNUM( 1 ) )
+            {
+               hb_retl( p->listen( hb_parnint( 1 ) ) );
+               return;
+            }
+#endif
+            break;
+         }
+      }
+      hb_errRT_BASE( EG_ARG, 9999, NULL, HB_ERR_FUNCNAME, HB_ERR_ARGS_BASEPARAMS );
+   }
+}
+
+int   maxPendingConnections() const
+virtual QLocalSocket *   nextPendingConnection()
+QAbstractSocket::SocketError   serverError() const
+QString   serverName() const
+void   setMaxPendingConnections(int numConnections)
+void   setSocketOptions(QLocalServer::SocketOptions options)                   [*V=0x050000*]
+SocketOptions   socketOptions() const                                          [*V=0x050000*]
+bool   waitForNewConnection(int msec = 0, bool * timedOut = 0)
+
+bool   removeServer(const QString & name)
+</PROTOS>
+
+<SLOTS>
+</SLOTS>
+
+<SIGNALS>
+void   newConnection()
+</SIGNALS>
+
+<VARIABLES>
+</VARIABLES>
+

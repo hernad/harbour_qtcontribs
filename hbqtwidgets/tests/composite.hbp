@@ -1,0 +1,11 @@
+#
+# $Id: composite.hbp 304 2014-05-06 02:09:33Z bedipritpal $
+#
+
+-inc
+-es2
+-w3
+
+composite.prg
+composite.ui
+

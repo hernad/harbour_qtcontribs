@@ -1,0 +1,10 @@
+#
+# $Id: hbqtsensors.hbc 331 2014-08-09 01:45:17Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=qtsensors/hbqtsensors.hbc

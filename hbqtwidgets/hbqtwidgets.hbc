@@ -1,0 +1,11 @@
+#
+# $Id: hbqtwidgets.hbc 84 2012-12-10 22:53:21Z bedipritpal $
+#
+
+incpaths=.
+
+libs=${_HB_DYNPREF}${hb_name}${_HB_DYNSUFF}
+
+libpaths=lib/${hb_plat}/${hb_comp}/
+
+libs=hbqt.hbc

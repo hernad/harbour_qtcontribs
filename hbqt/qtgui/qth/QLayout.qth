@@ -1,0 +1,72 @@
+/*
+ * $Id: QLayout.qth 319 2014-07-25 01:29:55Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2009-2012 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+Inherit     = QObject, QLayoutItem
+New         = pParent
+Constructor = no
+</CLASS>
+
+<CODE>
+#include <QtGui/QLayout>
+
+
+/*
+ * QLayout ( QWidget * parent )
+ * QLayout ()
+ */
+HB_FUNC( QT_QLAYOUT )
+{
+
+}
+</CODE>
+
+<ENUMS>
+enum SizeConstraint { SetDefaultConstraint, SetFixedSize, SetMinimumSize, SetMaximumSize, SetMinAndMaxSize, SetNoConstraint }
+</ENUMS>
+
+<PROTOS>
+bool activate ()
+virtual void addItem ( QLayoutItem * item )     [*D=1*]
+void addWidget ( QWidget * w )                  [*X=1*]
+QMargins   contentsMargins() const                [*V=0x040600*]
+QRect contentsRect () const
+virtual int count () const = 0
+virtual Qt::Orientations expandingDirections () const
+void getContentsMargins ( int * left, int * top, int * right, int * bottom ) const
+virtual int indexOf ( QWidget * widget ) const
+bool isEnabled () const
+virtual QLayoutItem * itemAt ( int index ) const = 0
+virtual QSize maximumSize () const
+QWidget * menuBar () const
+virtual QSize minimumSize () const
+QWidget * parentWidget () const
+QLayoutItem *   replaceWidget(QWidget * from, QWidget * to, Qt::FindChildOptions options = Qt::FindChildrenRecursively)  [*V=0x050200*]
+void removeItem ( QLayoutItem * item )          [*A=1*]
+void removeWidget ( QWidget * widget )          [*A=1*]
+bool setAlignment ( QWidget * w, Qt::Alignment alignment )
+void setAlignment ( Qt::Alignment alignment )
+bool setAlignment ( QLayout * l, Qt::Alignment alignment )
+void setContentsMargins ( int left, int top, int right, int bottom )
+void   setContentsMargins(const QMargins & margins)      [*V=0x040600*]
+void setEnabled ( bool enable )
+void setMenuBar ( QWidget * widget )            [*X=1*]
+void setSizeConstraint ( SizeConstraint )
+void setSpacing ( int )
+SizeConstraint sizeConstraint () const
+int spacing () const
+virtual QLayoutItem * takeAt ( int index ) = 0  [*A=1*]
+void update ()
+
+QSize closestAcceptableSize ( const QWidget * widget, const QSize & size )
+</PROTOS>

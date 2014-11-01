@@ -1,0 +1,23 @@
+#
+# $Id: filelist.hbm 288 2014-04-11 02:00:30Z bedipritpal $
+#
+
+-pflag=-qtver=0x050200
+-pflag=-qtmodule=qtbluetooth
+-pflag=-qthdocdir=../doc/
+
+
+QBluetoothAddress.qth
+QBluetoothDeviceDiscoveryAgent.qth
+QBluetoothDeviceInfo.qth
+QBluetoothHostInfo.qth
+QBluetoothLocalDevice.qth
+QBluetoothServer.qth
+QBluetoothServiceDiscoveryAgent.qth
+QBluetoothServiceInfo.qth
+QBluetoothSocket.qth
+QBluetoothTransferManager.qth
+QBluetoothTransferReply.qth
+QBluetoothTransferRequest.qth
+QBluetoothUuid.qth
+

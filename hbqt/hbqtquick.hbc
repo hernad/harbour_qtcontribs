@@ -1,0 +1,10 @@
+#
+# $Id: hbqtquick.hbc 312 2014-06-09 05:56:42Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=qtquick/hbqtquick.hbc

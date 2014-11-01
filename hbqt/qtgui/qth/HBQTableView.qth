@@ -1,0 +1,64 @@
+/*
+ * $Id: HBQTableView.qth 303 2014-05-05 07:01:33Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2009-2012 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+QObject     =
+Inherit     = QTableView
+Type        =
+New         =
+</CLASS>
+
+<SUBCLASS>
+</SUBCLASS>
+
+<DOC>
+</DOC>
+
+<CODE>
+#include <QtGui/QTableView>
+#include "hbqt_hbqtableview.h"
+
+
+/*
+ * HBQTableView ( QWidget * parent = 0 )
+ * ~HBQTableView ()
+ *
+ */
+HB_FUNC( QT_HBQTABLEVIEW )
+{
+   if( hb_pcount() == 1 && hbqt_par_isDerivedFrom( 1, "QWIDGET" ) )
+   {
+      __HB_RETPTRGC__( new HBQTableView( hbqt_par_QWidget( 1 ) ) );
+   }
+   else
+   {
+      __HB_RETPTRGC__( new HBQTableView() );
+   }
+}
+</CODE>
+
+<ENUMS>
+</ENUMS>
+
+<PROTOS>
+void hbSetBlock( PHB_ITEM block )
+void hbClearBlock()
+QRect visualRect ( const QModelIndex & index ) const
+void setModel(QAbstractItemModel * model)
+</PROTOS>
+
+<SLOTS>
+</SLOTS>
+
+<SIGNALS>
+</SIGNALS>

@@ -1,0 +1,12 @@
+#
+# $Id: hbqtqml.hbp 312 2014-06-09 05:56:42Z bedipritpal $
+#
+
+../hbqt_common.hbm
+
+hbqtqml.hbm
+
+-instfile=inc:hbqtqml.ch
+-instfile=inc:hbqtqml.hbx
+
+hbqtqmls.hbp

@@ -1,0 +1,12 @@
+#
+# $Id: hbqtmultimediawidgets.hbp 310 2014-06-02 01:38:30Z bedipritpal $
+#
+
+../hbqt_common.hbm
+
+hbqtmultimediawidgets.hbm
+
+-instfile=inc:hbqtmultimediawidgets.ch
+-instfile=inc:hbqtmultimediawidgets.hbx
+
+hbqtmultimediawidgetss.hbp

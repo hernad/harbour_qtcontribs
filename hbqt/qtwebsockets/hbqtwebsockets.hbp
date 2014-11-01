@@ -1,0 +1,14 @@
+#
+# $Id: hbqtwebsockets.hbp 287 2014-04-10 19:45:52Z bedipritpal $
+#
+
+-cflag=-I${HB_WITH_QT}/QtCore
+
+../hbqt_common.hbm
+
+hbqtwebsockets.hbm
+
+-instfile=inc:hbqtwebsockets.ch
+-instfile=inc:hbqtwebsockets.hbx
+
+hbqtwebsocketss.hbp

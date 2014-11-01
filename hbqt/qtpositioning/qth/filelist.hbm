@@ -1,0 +1,23 @@
+#
+# $Id: filelist.hbm 286 2014-04-10 00:31:40Z bedipritpal $
+#
+
+-pflag=-qtver=0x050000
+-pflag=-qtmodule=qtpositioning
+-pflag=-qthdocdir=../doc/
+
+QGeoAddress.qth
+QGeoAreaMonitorInfo.qth
+QGeoAreaMonitorSource.qth
+QGeoCircle.qth
+QGeoCoordinate.qth
+QGeoLocation.qth
+QGeoPositionInfo.qth
+QGeoPositionInfoSource.qth
+QGeoPositionInfoSourceFactory.qth
+QGeoRectangle.qth
+QGeoSatelliteInfo.qth
+QGeoSatelliteInfoSource.qth
+QGeoShape.qth
+QNmeaPositionInfoSource.qth
+

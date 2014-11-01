@@ -1,0 +1,12 @@
+#
+# $Id: ideui.hbp 34 2012-10-13 21:57:41Z bedipritpal $
+#
+
+@hbmk.hbm
+
+-mt
+
+dbstruct.prg
+cls_dbstruct.prg
+
+dbstruct.ui

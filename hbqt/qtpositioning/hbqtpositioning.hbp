@@ -1,0 +1,14 @@
+#
+# $Id: hbqtpositioning.hbp 286 2014-04-10 00:31:40Z bedipritpal $
+#
+
+-cflag=-I${HB_WITH_QT}/QtCore
+
+../hbqt_common.hbm
+
+hbqtpositioning.hbm
+
+-instfile=inc:hbqtpositioning.ch
+-instfile=inc:hbqtpositioning.hbx
+
+hbqtpositionings.hbp

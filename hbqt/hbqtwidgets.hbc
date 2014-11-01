@@ -1,0 +1,10 @@
+#
+# $Id: hbqtwidgets.hbc 250 2013-06-29 00:41:35Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=../hbqtwidgets/hbqtwidgets.hbc

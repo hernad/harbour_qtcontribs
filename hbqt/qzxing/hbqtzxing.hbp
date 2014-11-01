@@ -1,0 +1,13 @@
+#
+# $Id: hbqtzxing.hbp 316 2014-07-06 09:18:19Z bedipritpal $
+#
+
+../hbqt_common.hbm
+
+hbqtzxing.hbm
+
+-instfile=inc:hbqtzxing.ch
+-instfile=inc:hbqtzxing.hbx
+
+
+hbqtzxings.hbp

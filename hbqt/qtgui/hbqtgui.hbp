@@ -1,0 +1,12 @@
+#
+# $Id: hbqtgui.hbp 34 2012-10-13 21:57:41Z bedipritpal $
+#
+
+../hbqt_common.hbm
+
+hbqtgui.hbm
+
+-instfile=inc:hbqtgui.ch
+-instfile=inc:hbqtgui.hbx
+
+hbqtguis.hbp

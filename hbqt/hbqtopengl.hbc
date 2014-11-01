@@ -1,0 +1,10 @@
+#
+# $Id: hbqtopengl.hbc 298 2014-04-20 06:32:54Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=qtopengl/hbqtopengl.hbc

@@ -1,0 +1,15 @@
+#
+# $Id: hbqtbluetooth.hbm 288 2014-04-11 02:00:30Z bedipritpal $
+#
+
+-i.
+
+qth/filelist.hbm
+
+hbqtbluetooth.hbx
+
+hbqt_init.cpp
+
+../qtcore/hbqtcore.hbc
+../qtnetwork/hbqtnetwork.hbc
+

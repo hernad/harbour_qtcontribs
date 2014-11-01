@@ -1,0 +1,10 @@
+#
+# $Id: hbqtzxing.hbc 316 2014-07-06 09:18:19Z bedipritpal $
+#
+
+# ---------------------------------------------------------------
+# Copyright 2010 Viktor Szakats (harbour syenar.net)
+# See COPYING for licensing terms.
+# ---------------------------------------------------------------
+
+libs=qzxing/hbqtzxing.hbc

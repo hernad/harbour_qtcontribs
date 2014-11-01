@@ -1,0 +1,54 @@
+/*
+ * $Id: QMetaClassInfo.qth 34 2012-10-13 21:57:41Z bedipritpal $
+ */
+
+/*
+ * Harbour Qt wrapper generator control file
+ *
+ * Copyright 2009-2012 Pritpal Bedi <bedipritpal@hotmail.com>
+ * www - http://www.harbour-project.org
+ *
+ * See COPYING for licensing terms.
+ */
+
+<CLASS>
+QObject     = no
+Inherit     =
+Type        = 
+New         =
+Constructor = No
+</CLASS>
+
+<SUBCLASS>
+</SUBCLASS>
+
+<DOC>
+</DOC>
+
+<CODE>
+#include <QtCore/QMetaClassInfo>
+
+
+/*
+ * QMetaClassInfo () 
+ * 
+ */
+HB_FUNC( QT_QMETACLASSINFO )
+{
+   // __HB_RETPTRGC__( new QMetaClassInfo() );
+}
+</CODE>
+
+<ENUMS>
+</ENUMS>
+
+<PROTOS>
+const char * name () const
+const char * value () const
+</PROTOS>
+
+<SLOTS>
+</SLOTS>
+
+<SIGNALS>
+</SIGNALS>

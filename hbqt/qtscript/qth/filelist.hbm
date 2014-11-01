@@ -1,0 +1,21 @@
+#
+# $Id: filelist.hbm 34 2012-10-13 21:57:41Z bedipritpal $
+#
+
+-pflag=-qtver=0x040500
+-pflag=-qtmodule=qtsvg
+-pflag=-qthdocdir=../doc/
+
+QScriptClass.qth
+QScriptClassPropertyIterator.qth
+QScriptContext.qth
+QScriptContextInfo.qth
+QScriptEngine.qth
+QScriptEngineAgent.qth
+QScriptExtensionPlugin.qth
+QScriptProgram.qth
+QScriptString.qth
+QScriptSyntaxCheckResult.qth
+QScriptValue.qth
+QScriptValueIterator.qth
+QScriptable.qth

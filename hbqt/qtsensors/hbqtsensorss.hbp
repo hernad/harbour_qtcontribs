@@ -1,0 +1,7 @@
+#
+# $Id: hbqtsensorss.hbp 330 2014-08-09 01:13:05Z bedipritpal $
+#
+
+../hbqt_commons.hbm
+
+hbqtsensors.hbm
