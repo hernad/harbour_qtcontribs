@@ -7,17 +7,21 @@
 -3rd=hbide_title=hbqtwidgets
 -3rd=hbide_output=hbqtwidgets
 
--hblib
+#-hblib
+-hbdyn
 
 -w3 
 -es2
 -inc
 
--o../../lib/${hb_plat}/${hb_comp}/${hb_targetname}
--workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
+-plugin=../hbqt/hbmk2_qt.hb
+-o${hb_name}
+#-o../../lib/${hb_plat}/${hb_comp}/${hb_targetname}
+#-workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
 
 
-hbqt.hbc
+hbqtcore.hbc
+hbqtgui.hbc
 
 -instfile=inc:hbtoqt.ch
 -instfile=inc:hbqtstd.ch

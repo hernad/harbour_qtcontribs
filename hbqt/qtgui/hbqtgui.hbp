@@ -3,12 +3,42 @@
 #
 
 -o${hb_name}
+-hbdyn
 
-../hbqt_common.hbm
-
-hbqtgui.hbm
+-plugin=../hbmk2_qt.hb
+-workdir=.h
+-inc
 
 -instfile=inc:hbqtgui.ch
 -instfile=inc:hbqtgui.hbx
 
-hbqtguis.hbp
+qth/filelist.hbm
+
+hbqt_hbqabstractitemmodel.cpp
+hbqt_hbqgraphicsitem.cpp
+hbqt_hbqgraphicsscene.cpp
+hbqt_hbqplaintextedit.cpp
+hbqt_hbqsyntaxhighlighter.cpp
+hbqt_hbqtableview.cpp
+hbqt_init.cpp
+hbqt_utils.cpp
+hbqt_hbqvalidator.cpp
+hbqt_hbqproxystyle.cpp
+hbqt_flickcharm.cpp
+
+hbqt_hbqabstractitemmodel.h
+hbqt_hbqgraphicsscene.h
+hbqt_hbqplaintextedit.h
+hbqt_hbqsyntaxhighlighter.h
+hbqt_hbqtableview.h
+hbqt_hbqvalidator.h
+hbqt_flickcharm.h
+
+hbqt_errorsys.prg
+
+hbqtcore.hbc
+
+${hb_name}.hbx
+$hb_pkg_dynlib.hbm
+$hb_pkg_install.hbm
+

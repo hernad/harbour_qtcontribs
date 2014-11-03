@@ -2,15 +2,20 @@
 # $Id: hbxbp.hbp 297 2014-04-20 05:48:59Z bedipritpal $
 #
 
--hblib
+#F18
+#-hblib
+-hbdyn
 -inc
 
--o../../lib/${hb_plat}/${hb_comp}/${hb_targetname}
--workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
+-o${hb_name}
+#-workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
 
 -w3 -es2
 
-hbqt.hbc
+-plugin=../hbqt/hbmk2_qt.hb
+
+hbqtcore.hbc
+hbqtgui.hbc
 
 -instfile=inc:appevent.ch
 -instfile=inc:gra.ch

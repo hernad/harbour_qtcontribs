@@ -10,9 +10,9 @@ hbqtxml.hbx
 
 hbqt_init.cpp
 
-../qtcore/hbqtcore.hbc
-../qtgui/hbqtgui.hbc
-../qtnetwork/hbqtnetwork.hbc
+hbqtcore.hbc
+hbqtgui.hbc
+hbqtnetwork.hbc
 
 -deppkgname=qtxml:QtXml
 -depkeyhead=qtxml:QtXml/QtXml

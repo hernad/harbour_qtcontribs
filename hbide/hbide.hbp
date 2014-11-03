@@ -8,6 +8,7 @@
 
 {android}-hblib
 
+
 -inc
 -w3
 -es2
@@ -16,14 +17,20 @@
 
 -workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_name}
 
-{!android}-o../../bin/${hb_plat}/${hb_comp}/${hb_name}
-{android}-o../../../lib/${hb_plat}/${hb_comp}/${hb_name}
+#{!android}-o../../bin/${hb_plat}/${hb_comp}/${hb_name}
+#{android}-o../../../lib/${hb_plat}/${hb_comp}/${hb_name}
+
+-o${hb_name}
+-plugin=../hbqt/hbmk2_qt.hb
+-shared
 
 {!android}-instpath=${HB_BIN}/
 {android}-instpath=${HB_LIB}/
 
+addons/hbqt_common/hbqtcore.hbc
+addons/hbqt_common/hbqtgui.hbc
+hbct.hbc
 hbxbp.hbc
-hbqt.hbc
 hbqtwidgets.hbc
 hbformat.hbc
 
@@ -66,7 +73,7 @@ debugger.prg
 
 hbqtoolbar.prg
 
-parseexpr.c
+#parseexpr.c
 
 docviewgenerator.ui
 docwriter.ui

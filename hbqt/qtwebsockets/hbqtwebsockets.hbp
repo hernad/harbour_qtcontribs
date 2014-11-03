@@ -4,6 +4,8 @@
 
 -cflag=-I${HB_WITH_QT}/QtCore
 
+-o${hb_name}
+
 ../hbqt_common.hbm
 
 hbqtwebsockets.hbm

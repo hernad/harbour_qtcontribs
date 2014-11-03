@@ -10,9 +10,9 @@ hbqtscript.hbx
 
 hbqt_init.cpp
 
-../qtcore/hbqtcore.hbc
-../qtgui/hbqtgui.hbc
-../qtnetwork/hbqtnetwork.hbc
+hbqtcore.hbc
+hbqtgui.hbc
+hbqtnetwork.hbc
 
 -deppkgname=qtscript:QtScript
 -depkeyhead=qtscript:QtScript/QtScript

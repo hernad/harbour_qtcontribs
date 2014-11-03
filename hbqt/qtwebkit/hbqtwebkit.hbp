@@ -4,6 +4,8 @@
 
 {android}-stop='QtWebkit is not available for Android...'
 
+-o${hb_name}
+
 ../hbqt_common.hbm
 
 hbqtwebkit.hbm

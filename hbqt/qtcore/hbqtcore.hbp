@@ -4,14 +4,52 @@
 
 -o${hb_name}
 
-../hbqt_common.hbm
+-hbdyn
+-plugin=../hbmk2_qt.hb
 
-hbqtcore.hbm
+-workdir=.h
+-inc
 
 -instfile=inc:hbqtcore.ch
 -instfile=inc:hbqtcore.hbx
 -instfile=inc:hbqt.h
 -instfile=inc:hbqtcore.h
 
-hbqtcores.hbp
+-i.
 
+qth/filelist.hbm
+
+hbqt_init.cpp
+hbqt_pointer.cpp
+hbqt_version.cpp
+
+hbqt_hbqevents.cpp
+hbqt_hbqslots.cpp
+hbqt_hbqstring.cpp
+
+hbqt_bind.cpp
+hbqt_destroyer.cpp
+hbqt_misc.prg
+
+hbqt_hbqevents.h
+hbqt_destroyer.h
+
+-depcontrol=qt5:${HB_WITH_QT}
+-depkeyhead=qt5:QtCore/QJsonObject
+-depoptional=qt5:yes
+-depfinish=qt5
+
+{!HBMK_HAS_QT5&!android}-deppkgname=qt:QtCore
+{!HBMK_HAS_QT5}-depkeyhead=qt:QtCore/qglobal.h
+{!HBMK_HAS_QT5}-depcontrol=qt:${HB_WITH_QT}
+{!HBMK_HAS_QT5&HB_BUILD_3RDEXT='no'}-depcontrol=qt:no
+{!HBMK_HAS_QT5&!darwin&!android}-depincpath=qt:/usr/include
+{!HBMK_HAS_QT5&bsd}-depincpath=qt:/usr/local/include/qt4
+{darwin}-depincpath=qt5:/Developer/qt/include
+{darwin}-depincpath=qt5:/Library/Frameworks
+{darwin}-depincpath=qt5:/usr/local/include
+
+
+${hb_name}.hbx
+$hb_pkg_dynlib.hbm
+$hb_pkg_install.hbm

@@ -13,5 +13,5 @@ hbqt_init.cpp
 hbqt_hbqsciscintilla.cpp
 hbqt_hbqsciscintilla.h
 
-../qtcore/hbqtcore.hbc
-../qtgui/hbqtgui.hbc
+hbqtcore.hbc
+hbqtgui.hbc
