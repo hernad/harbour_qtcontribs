@@ -1,0 +1,4 @@
+description=hwgdebug
+libpaths=lib/${hb_plat}/${hb_comp}
+{win}libs=${hb_name}_dll
+{linux|darwin}libs=${hb_name}
