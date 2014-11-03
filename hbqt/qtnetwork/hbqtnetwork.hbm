@@ -10,4 +10,4 @@ hbqtnetwork.hbx
 
 hbqt_init.cpp
 
-../qtcore/hbqtcore.hbc
+hbqtcore.hbc

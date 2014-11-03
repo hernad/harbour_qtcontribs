@@ -2,6 +2,8 @@
 # $Id: hbqtnetwork.hbp 34 2012-10-13 21:57:41Z bedipritpal $
 #
 
+-o${hb_name}
+
 ../hbqt_common.hbm
 
 hbqtnetwork.hbm

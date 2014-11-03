@@ -10,9 +10,9 @@ qtdeclarative.hbx
 
 hbqt_init.cpp
 
-../qtcore/hbqtcore.hbc
-../qtgui/hbqtgui.hbc
-../qtnetwork/hbqtnetwork.hbc
+hbqtcore.hbc
+hbqtgui.hbc
+hbqtnetwork.hbc
 
 -deppkgname=qtdeclarative:QtDeclarative
 -depkeyhead=qtdeclarative:QtDeclarative/QtDeclarative

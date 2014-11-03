@@ -12,5 +12,5 @@ hbqtdesigner.hbx
 
 hbqt_init.cpp
 
-../qtcore/hbqtcore.hbc
-../qtgui/hbqtgui.hbc
+hbqtcore.hbc
+hbqtgui.hbc

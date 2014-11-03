@@ -10,6 +10,8 @@ hbqtcore.hbm
 
 -instfile=inc:hbqtcore.ch
 -instfile=inc:hbqtcore.hbx
+-instfile=inc:hbqt.h
+-instfile=inc:hbqtcore.h
 
 hbqtcores.hbp
 
