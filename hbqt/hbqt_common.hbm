@@ -9,12 +9,19 @@
 
 # Common settings for all hbqt subcomponents
 
--hblib
+# F18
+#-hblib
+-hbdyn
+
+${hb_name}.hbx
+$hb_pkg_dynlib.hbm
+$hb_pkg_install.hbm
+
 -inc
 
-
--o$../../../../lib/${hb_plat}/${hb_comp}/${hb_targetname}
--workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
+# F18
+#-o$../../../../lib/${hb_plat}/${hb_comp}/${hb_targetname}
+#-workdir=${hb_work}/${hb_plat}/${hb_comp}/${hb_targetname}
 
 -w3 -es2
 

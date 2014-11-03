@@ -2,6 +2,8 @@
 # $Id: hbqtcore.hbp 34 2012-10-13 21:57:41Z bedipritpal $
 #
 
+-o${hb_name}
+
 ../hbqt_common.hbm
 
 hbqtcore.hbm
@@ -10,3 +12,4 @@ hbqtcore.hbm
 -instfile=inc:hbqtcore.hbx
 
 hbqtcores.hbp
+
