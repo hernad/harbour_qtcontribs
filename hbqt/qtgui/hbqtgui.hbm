@@ -30,4 +30,5 @@ hbqt_flickcharm.h
 
 hbqt_errorsys.prg
 
-../qtcore/hbqtcore.hbc
+#share/harbour/addons/hbqt/hbqtcore.hbc
+hbqtcore.hbc
